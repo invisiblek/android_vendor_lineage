@@ -70,12 +70,6 @@ function breakfast()
     LINEAGE_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
     add_lunch_combo full-eng
-    for f in `/bin/ls vendor/lineage/vendorsetup.sh 2> /dev/null`
-        do
-            echo "including $f"
-            . $f
-        done
-    unset f
 
     if [ $# -eq 0 ]; then
         # No arguments, so let's have the full menu
