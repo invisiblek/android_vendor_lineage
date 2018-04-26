@@ -51,6 +51,13 @@ function mk_timer()
     return $ret
 }
 
+function bake()
+{
+  target=$1
+  lunch lineage_"$target"-userdebug
+  mka bacon
+}
+
 function brunch()
 {
     breakfast $*
